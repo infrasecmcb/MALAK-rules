@@ -1,0 +1,7 @@
+# --- BEGIN MALAK metadata ---
+# source: a_forge
+# stage: production
+# stage_entered_at: 2026-05-09T01:18:57+00:00
+# --- END MALAK metadata ---
+# DISABLED-BLANK: alert http any any -> any any (sid:1001027; rev:1; metadata: malak_origin a_forge; msg:"MALAK.Draft CVE-2015-3043 Adobe Flash Player Memory Corruption Vulnerability"; flow:established,to_client;)
+# promoted_at: 2026-05-09T01:29:21+00:00

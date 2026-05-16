@@ -1,0 +1,7 @@
+# --- BEGIN MALAK metadata ---
+# source: a_forge
+# stage: production
+# stage_entered_at: 2026-05-09T02:03:26+00:00
+# --- END MALAK metadata ---
+# DISABLED-BLANK: alert http any any -> $EXTERNAL_NET any (msg:"MALAK.Draft CVE-2020-5847 Unraid Remote Code Execution"; flow:established,to_server; sid:1001314; rev:1; metadata: malak_origin a_forge;)
+# promoted_at: 2026-05-09T04:39:17+00:00

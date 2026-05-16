@@ -1,0 +1,7 @@
+# --- BEGIN MALAK metadata ---
+# source: a_forge
+# stage: production
+# stage_entered_at: 2026-05-08T19:09:47+00:00
+# --- END MALAK metadata ---
+# DISABLED-BLANK: alert http any any -> $EXTERNAL_NET any (sid:1000016; rev:1; metadata: malak_origin a_forge; msg:"MALAK.Draft CVE-2024-57726 SimpleHelp Missing Authorization Vulnerability"; flow:established,to_server;)
+# promoted_at: 2026-05-08T19:23:09+00:00

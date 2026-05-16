@@ -1,0 +1,7 @@
+# --- BEGIN MALAK metadata ---
+# source: a_forge
+# stage: production
+# stage_entered_at: 2026-05-09T01:41:27+00:00
+# --- END MALAK metadata ---
+alert http $HOME_NET any -> any any (msg:"MALAK.Draft CVE-2020-8655 EyesOfNetwork Privilege Escalation via API"; flow:established,to_server; http.method; content:"POST"; http.uri; content:"/eonweb/api/set_user_pref.php"; fast_pattern; classtype:web-application-attack; sid:1001171; rev:2; metadata:malak_origin a_forge, cve CVE-2020-8655, updated_at 2026_05_15;)
+# promoted_at: 2026-05-09T04:49:27+00:00

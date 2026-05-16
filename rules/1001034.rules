@@ -1,0 +1,7 @@
+# --- BEGIN MALAK metadata ---
+# source: a_forge
+# stage: production
+# stage_entered_at: 2026-05-09T01:19:55+00:00
+# --- END MALAK metadata ---
+# DISABLED-BLANK: alert http any any -> $EXTERNAL_NET any (sid:1001034; rev:1; metadata: malak_origin a_forge; msg:"MALAK.Draft CVE-2013-3897 Microsoft Internet Explorer Use-After-Free attempt"; flow:to_server,established;)
+# promoted_at: 2026-05-09T01:29:20+00:00

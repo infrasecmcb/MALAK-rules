@@ -1,0 +1,7 @@
+# --- BEGIN MALAK metadata ---
+# source: a_forge
+# stage: production
+# stage_entered_at: 2026-05-09T01:16:38+00:00
+# --- END MALAK metadata ---
+# DISABLED-BLANK: alert tcp any any -> $EXTERNAL_NET any (msg:"MALAK.Draft CVE-2017-11826 Microsoft Office Equation Editor RCE"; flow:to_client,established; sid:1001012; rev:1; metadata: malak_origin a_forge;)
+# promoted_at: 2026-05-09T01:29:22+00:00

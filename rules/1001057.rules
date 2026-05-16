@@ -1,0 +1,7 @@
+# --- BEGIN MALAK metadata ---
+# source: a_forge
+# stage: production
+# stage_entered_at: 2026-05-09T01:23:34+00:00
+# --- END MALAK metadata ---
+# DISABLED-BLANK: alert http any any -> any any (sid:1001057; rev:1; metadata: malak_origin a_forge; msg:"MALAK.Draft CVE-2022-24682 Zimbra XSS attempt"; flow:established,to_server;)
+# promoted_at: 2026-05-09T01:29:15+00:00

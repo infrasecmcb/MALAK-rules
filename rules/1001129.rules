@@ -1,0 +1,7 @@
+# --- BEGIN MALAK metadata ---
+# source: a_forge
+# stage: production
+# stage_entered_at: 2026-05-09T01:34:49+00:00
+# --- END MALAK metadata ---
+alert http $EXTERNAL_NET any -> $HTTP_SERVERS any (msg:"MALAK.Draft CVE-2017-5638 Apache Struts2 OGNL RCE via Content-Type"; flow:established,to_server; http.method; content:"POST"; http.header; content:"Content-Type|3a 20|"; content:"#_="; distance:0; within:80; fast_pattern; classtype:attempted-admin; sid:1001129; rev:2; metadata:malak_origin a_forge, cve CVE-2017-5638, updated_at 2026_05_15;)
+# promoted_at: 2026-05-09T04:49:30+00:00

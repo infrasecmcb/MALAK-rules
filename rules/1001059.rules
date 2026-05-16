@@ -1,0 +1,7 @@
+# --- BEGIN MALAK metadata ---
+# source: a_forge
+# stage: production
+# stage_entered_at: 2026-05-09T01:23:54+00:00
+# --- END MALAK metadata ---
+# DISABLED-BLANK: alert http any any -> $EXTERNAL_NET any (msg:"MALAK.Draft CVE-2017-0222 Microsoft Internet Explorer RCE"; flow:to_client,established; sid:1001059; rev:1; metadata: malak_origin a_forge;)
+# promoted_at: 2026-05-09T01:29:15+00:00

@@ -1,0 +1,7 @@
+# --- BEGIN MALAK metadata ---
+# source: a_forge
+# stage: production
+# stage_entered_at: 2026-05-09T01:19:30+00:00
+# --- END MALAK metadata ---
+alert http $EXTERNAL_NET any -> $HOME_NET any (msg:"MALAK.Draft CVE-2015-1642 Microsoft Office Memory Corruption via Malicious RTF"; flow:to_server,established; http.request_body; content:"Content-Type: application/msword"; content:"<rtf>"; distance:0; within:256; classtype:attempted-user; sid:1001031; rev:2; metadata:malak_origin a_forge, updated_at 2026_05_15;)
+# promoted_at: 2026-05-09T01:29:20+00:00

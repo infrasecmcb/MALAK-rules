@@ -1,0 +1,8 @@
+# --- BEGIN MALAK metadata ---
+# source: a_forge
+# stage: production
+# stage_entered_at: 2026-05-09T02:04:30+00:00
+# --- END MALAK metadata ---
+# promoted_at: 2026-05-09T04:39:17+00:00
+# rule_replaced_at: 2026-05-09T14:29:47+00:00  by=admin
+alert http $EXTERNAL_NET any -> $HTTP_SERVERS any (msg:"MALAK.ET.HIGH.RCE.WPFileManager.1321"; flow:established,to_server; http.method; content:"POST"; http.uri; content:"/wp-content/plugins/wp-file-manager/lib/php/connector.minimal.php"; fast_pattern; classtype:web-application-attack; sid:1001321; rev:2; metadata:affected_product WordPress_File_Manager, cve CVE-2020-25213, attack_target Web_Server, created_at 2026_05_09, deployment IT_Perimeter DMZ, signature_severity High, mitre_tactic TA0001, mitre_technique T1190, malak_severity High, updated_at 2026_05_09;)

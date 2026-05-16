@@ -1,0 +1,7 @@
+# --- BEGIN MALAK metadata ---
+# source: a_forge
+# stage: production
+# stage_entered_at: 2026-05-09T01:43:56+00:00
+# --- END MALAK metadata ---
+# DISABLED-BLANK: alert http any any -> $EXTERNAL_NET any (sid:1001185; rev:1; metadata: malak_origin a_forge; msg:"MALAK.Draft CVE-2021-30551 Google Chromium V8 Type Confusion Vulnerability"; flow:to_server,established;)
+# promoted_at: 2026-05-09T04:49:26+00:00

@@ -1,0 +1,7 @@
+# --- BEGIN MALAK metadata ---
+# source: a_forge
+# stage: production
+# stage_entered_at: 2026-05-09T01:46:05+00:00
+# --- END MALAK metadata ---
+alert http $EXTERNAL_NET any -> $HTTP_SERVERS any (msg:"MALAK.Draft CVE-2019-4716 IBM Planning Analytics Java Deserialization RCE"; flow:established,to_server; http.request_body; content:"|AC ED 00 05|"; fast_pattern; classtype:attempted-admin; sid:1001198; rev:2; metadata:malak_origin a_forge, cve CVE-2019-4716, updated_at 2026_05_15;)
+# promoted_at: 2026-05-09T04:49:25+00:00

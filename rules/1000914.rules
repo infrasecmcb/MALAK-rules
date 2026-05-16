@@ -1,0 +1,7 @@
+# --- BEGIN MALAK metadata ---
+# source: a_forge
+# stage: production
+# stage_entered_at: 2026-05-11T10:33:11+00:00
+# --- END MALAK metadata ---
+alert http $HOME_NET any -> $EXTERNAL_NET any (msg:"MALAK.TI.MEDIUM.OAUTH.NonBrowserDeviceCodeUA.Storm2372"; flow:established,to_server; http.user_agent; pcre:"/^(python-requests|curl\/|Wget\/|Go-http-client|WindowsPowerShell|PowerShell\/)/i"; http.host; content:"microsoftonline"; classtype:trojan-activity; sid:1000914; rev:1; metadata:created_at 2026_05_11, attack_target Cloud_Identity, affected_product Microsoft_Entra_ID, deployment IT_Perimeter DMZ, signature_severity Medium, mitre_tactic TA0001, mitre_technique T1078_004, malak_severity Medium, threat_actor Storm-2372, malak_origin analyst;)
+# promoted_at: 2026-05-13T17:07:17+00:00

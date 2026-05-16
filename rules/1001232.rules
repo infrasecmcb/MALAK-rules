@@ -1,0 +1,7 @@
+# --- BEGIN MALAK metadata ---
+# source: a_forge
+# stage: production
+# stage_entered_at: 2026-05-09T01:50:38+00:00
+# --- END MALAK metadata ---
+# DISABLED-BLANK: alert tcp any any -> $EXTERNAL_NET 445 (msg:"MALAK.Draft CVE-2021-34527 PrintNightmare RCE Attempt"; flow:to_server; sid:1001232; rev:1; metadata: malak_origin a_forge;)
+# promoted_at: 2026-05-09T04:49:23+00:00

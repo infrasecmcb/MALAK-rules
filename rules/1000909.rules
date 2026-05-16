@@ -1,0 +1,7 @@
+# --- BEGIN MALAK metadata ---
+# source: a_forge
+# stage: production
+# stage_entered_at: 2026-05-10T08:12:16+00:00
+# --- END MALAK metadata ---
+alert http $EXTERNAL_NET any -> $HOME_NET any (msg:"MALAK.Draft CVE-TEST-2026-CLAUDE-001 TestCorp FleetManager Pre-Auth RCE via API token replay"; flow:established,to_server; http.method; content:"POST"; http.uri; content:"/api/v2/jobs/exec"; fast_pattern; http.header_names; content:"Authorization"; http.request_body; content:"command"; within:512; classtype:attempted-admin; sid:1000909; rev:1; metadata: malak_origin a_forge, deployment Perimeter, drafted_by claude, reviewed_by claude;)
+# promoted_at: 2026-05-11T02:58:29+00:00

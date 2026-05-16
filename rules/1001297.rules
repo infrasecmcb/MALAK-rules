@@ -1,0 +1,7 @@
+# --- BEGIN MALAK metadata ---
+# source: a_forge
+# stage: production
+# stage_entered_at: 2026-05-09T02:00:39+00:00
+# --- END MALAK metadata ---
+# DISABLED-BLANK: alert http any any -> $EXTERNAL_NET any (sid:1001297; rev:1; metadata: malak_origin a_forge; msg:"MALAK.Draft CVE-2021-20023 SonicWall Email Security Path Traversal"; flow:established,to_server;)
+# promoted_at: 2026-05-09T04:39:20+00:00
