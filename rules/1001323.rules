@@ -1,0 +1,7 @@
+# --- BEGIN MALAK metadata ---
+# threat_id: ANALYST-2026-1322-WebshellExec
+# source: analyst
+# stage: production
+# stage_entered_at: 2026-05-09T14:30:01+00:00
+# --- END MALAK metadata ---
+alert http $EXTERNAL_NET any -> $HTTP_SERVERS any (msg:"MALAK.ET.HIGH.MALWARE.WPFileManager.WebshellExec.1323"; flow:established,to_server; http.method; content:"GET"; http.uri; content:"/wp-content/plugins/wp-file-manager/lib/files/"; fast_pattern; content:".php"; distance:0; classtype:web-application-attack; sid:1001323; rev:1; metadata:affected_product WordPress_File_Manager, cve CVE-2020-25213, attack_target Web_Server, created_at 2026_05_09, deployment IT_Perimeter DMZ, signature_severity High, mitre_tactic TA0002, mitre_technique T1505_003, malak_severity High, updated_at 2026_05_09;)
